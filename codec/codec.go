@@ -4,7 +4,7 @@ import "io"
 
 type Header struct {
 	ServiceMethod string // format "Service.Method"
-	Seq           string // sequence number chosen by client
+	Seq           uint64 // sequence number chosen by client
 	Error         string
 }
 
