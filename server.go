@@ -18,7 +18,7 @@ type Option struct {
 	CodecType   codec.Type // client may choose different Codec to encode body
 }
 
-var DafaultOption = &Option{
+var DefaultOption = &Option{
 	MagicNumber: MagicNumber,
 	CodecType:   codec.GobType,
 }
