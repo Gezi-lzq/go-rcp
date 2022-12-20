@@ -55,7 +55,7 @@ func (server *Server) ServeConn(conn io.ReadWriteCloser) {
 		return
 	}
 	if opt.MagicNumber != MagicNumber {
-		log.Printf("rpc server: invalid magic number &x", opt.MagicNumber)
+		log.Printf("rpc server: invalid magic number %x", opt.MagicNumber)
 		return
 	}
 
